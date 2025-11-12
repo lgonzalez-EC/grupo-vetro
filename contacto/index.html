@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Grupo Vetro - Contacto</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Vetro, vetro, herrajes, Material de construcción, insumos de construcción, grupo vetro, 
+        diseño publicitario, corte laser, acrílico y policarbonato, panel de aluminio, vetro leon, vetro leon gto"
+        name="keywords">
+    <meta
+        content="Más de 20 años de experiencia en insumos para construcción. Nuestra misión es ser un aliado de confianza en cada proyecto de construcción."
+        name="description">
+
+    <!-- Favicon -->
+    <link href="../img/icon_logo.png" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700&family=Rubik:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.7.1/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="../lib/animate/animate.min.css" rel="stylesheet">
+    <link href="../lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Mapkick -->
+    <script src="https://unpkg.com/chartkick"></script>
+    <script src="https://unpkg.com/mapkick"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY"></script>
+
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Leaflet CSS y JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css" />
+    <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></script>
+
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Cargando...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start-->
+    <nav class="navbar navbar-expand-md bg-white shadow-sm sticky-top">
+        <div class="container-fluid px-4">
+            <!-- Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="../img/vetro-color.webp" alt="Logo_Grupo_Vetro">
+            </a>
+
+            <!-- Mobile toggle button -->
+            <button class="navbar-toggler border-1" type="button" id="menuToggle">
+                <span class="navbar-toggler-icon text-dark"></span>
+            </button>
+
+            <!-- Navigation links -->
+            <div class="collapse navbar-collapse" id="navbarMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                    <li class="nav-item"><a class="nav-link text-dark active" href="../">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="/marcas/">Marcas</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#productos">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#compras">Compras</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark" href="#sucursales">Sucursales</a></li>
+                    <li class="nav-item">
+                        <a class="btn ms-md-3" href="#cotiza">Cotiza ahora</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Header Start -->
+    <header class="page-header d-flex flex-column align-items-center justify-content-center">
+        <h1 class="display-3 text-uppercase mb-3">Contacto</h1>
+        <div class="d-inline-flex text-white">
+            <h6 class="text-uppercase m-0"><a class="" href="../">Inicio</a></h6>
+            <h6 class="m-0 px-3">/</h6>
+            <h6 class="text-uppercase m-0">Contacto</h6>
+        </div>
+    </header>
+    <!-- Header End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid contact py-5">
+        <div class="container py-5">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+                <h3 class="display-5 mb-2">Cuéntanos sobre tu próximo proyecto</h3>
+                <p class="mb-0">
+                    En Grupo Vetro estamos comprometidos a ofrecer un servicio excepcional y productos de la más alta
+                    calidad. Nos encantaría ayudarte con tus proyectos de construcción.
+                </p>
+            </div>
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
+                    <form action="../formcontacto.php" method="POST">
+                        <div class="row g-3">
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" name="nombre"
+                                        placeholder="Tu Nombre" required>
+                                    <label for="name">Tu Nombre</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" name="correo"
+                                        placeholder="Tu Correo" required>
+                                    <label for="email">Tu Correo</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input type="number" class="form-control" id="phone" name="telefono"
+                                        placeholder="Teléfono" required>
+                                    <label for="phone">Teléfono</label>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" name="asunto"
+                                        placeholder="Asunto" required>
+                                    <label for="phone">Asunto</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Deja tu mensaje aquí" id="message"
+                                        name="mensaje" style="height: 160px" required></textarea>
+                                    <label for="message">Mensaje</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="privacidad" name="privacidad"
+                                        required>
+                                    <label class="form-check-label" for="privacidad">
+                                        Acepto las políticas de privacidad
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100 py-3">Enviar Mensaje</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.3s">
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-light d-flex align-items-center justify-content-center mb-3"
+                            style="width: 90px; height: 90px; border-radius: 50px;">
+                            <i class="fa fa-map-marker-alt fa-2x text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h4>Villa</h4>
+                            <p class="mb-0">Blvd. Francisco Villa 4413, col. León I, León, Gto, México.</p>
+                            <p class="mb-0">(477) 527 3183</p>
+                            <p class="mb-0">(477) 784 0785</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-light d-flex align-items-center justify-content-center mb-3"
+                            style="width: 90px; height: 90px; border-radius: 50px;">
+                            <i class="fa fa-map-marker-alt fa-2x text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h4>Tepeyac</h4>
+                            <p class="mb-0">Calzada Tepeyac 418, col. Andrade, León, Gto, México.</p>
+                            <p class="mb-0">(477) 135 8317</p>
+                            <p class="mb-0">(477) 771 4461</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="bg-light d-flex align-items-center justify-content-center mb-3"
+                            style="width: 90px; height: 90px; border-radius: 50px;">
+                            <i class="fa fa-map-marker-alt fa-2x text-primary"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h4>Irapuato</h4>
+                            <p class="mb-0">Blvd. Lázaro Cárdenas 810, col. Las Palomas, Irapuato, Gto, México.</p>
+                            <p class="mb-0">(462) 109 1647</p>
+                            <p class="mb-0">(462) 431 3113</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 wow fadeInUp my-5" data-wow-delay="0.1s">
+                <!-- Mapa Leaflet -->
+                <div id="leaflet-map" style="height: 500px; width: 100%;" class="rounded"></div>
+
+                <!-- <div id="sidebar" class="bg-light p-3" style="width: 300px; max-height: 500px; overflow-y: auto;">
+                    <h5 class="text-primary">Sucursales</h5>
+                    <ul id="branch-list" class="list-unstyled mb-0 small"></ul>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Contact End -->
+
+
+    <!-- Inicio del Pie de Página -->
+    <div class="container-fluid footer py-5 wow fadeIn" data-wow-delay="0.2s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="text-light mb-4">Grupo Vetro</h4>
+                        <a class="mb-1" href="https://maps.app.goo.gl/UJVpKRPJpyHmxdBv5" target="_blank"><i
+                                class="fa fa-map-marker-alt me-2"></i> Blvd. Francisco Villa 4413, col. León I, León,
+                            Gto, México.
+                        </a>
+                        <a class="mb-1" href="https://maps.app.goo.gl/UJVpKRPJpyHmxdBv5" target="_blank"><i
+                                class="fa fa-map-marker-alt me-2"></i> Calzada Tepeyac 418, col. Andrade, C.P. 3702,
+                            León, Gto, Méxcio
+                        </a>
+                        <a class="mb-1" href="https://maps.app.goo.gl/UJVpKRPJpyHmxdBv5" target="_blank"><i
+                                class="fa fa-map-marker-alt me-2"></i> Blvd. Lázaro Cárdenas 810, col. Las Palomas,
+                            Irapuato, Gto, México.
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-light">Accesos directos</h4>
+                        <a href="index"> Inicio</a>
+                        <a href="about"> Nosotros</a>
+                        <a href="service"> Servicios</a>
+                        <a href="contact"> Contacto</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 col-xl-4">
+                    <div class="footer-item d-flex flex-column">
+                        <h4 class="mb-4 text-light">Contacto</h4>
+                        <a href="./"><i class="fas fa-envelope me-2"></i> contacto@grupovetro.com.mx</a>
+                        <a href="https://wa.me/524775273183?text=¡Hola!%20Visite%20su%20pagina%20web%20y%20quiero%20saber%20más%20sobre%20sus%20productos%20y%20servicios."
+                            target="_blank"><i class="fab fa-whatsapp me-2"></i> (477) 527 3183</a>
+                        <a href="tel:+524777840785" class="mb-3"><i class="fas fa-phone me-2"></i> (477) 784 0785</a>
+                        <div class="d-flex align-items-center">
+                            <a class="btn-square btn btn-primary rounded-circle mx-1" target="_blank"
+                                href="https://www.facebook.com/p/Vetro-Herrajes-100054524137661/?locale=es_LA"><i
+                                    class="fab fa-facebook-f"></i></a>
+                            <a class="btn-square btn btn-primary rounded-circle mx-1" target="_blank"
+                                href="https://www.instagram.com/grupovetro/"><i class="fab fa-instagram"></i></a>
+                            <a class="btn-square btn btn-primary rounded-circle mx-1" target="_blank"
+                                href="https://www.tiktok.com/@grupovetro"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin del Pie de Página -->
+
+
+    <!-- Copyright Start -->
+    <div class="containe r-fluid copyright py-4">
+        <div class="container">
+            <div class="row g-4 align-items-center">
+                <div class="col-12 text-center mb-md-0">
+                    <span class="text-white"><a href="#" class="border-bottom text-white"><i
+                                class="fas fa-copyright text-light me-2"></i>Grupo Vetro</a>, 2025.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../lib/wow/wow.min.js"></script>
+    <script src="../lib/easing/easing.min.js"></script>
+    <script src="../lib/waypoints/waypoints.min.js"></script>
+    <script src="../lib/counterup/counterup.min.js"></script>
+    <script src="../lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../js/main.js"></script>
+
+
+    <script>
+        // Icono personalizado SVG color #2EA49C
+        const customIcon = L.icon({
+            iconUrl: 'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="48" viewBox="0 0 32 48"><path fill="%232EA49C" d="M16 0C7.163 0 0 7.163 0 16c0 11.046 16 32 16 32s16-20.954 16-32C32 7.163 24.837 0 16 0zm0 24a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"/></svg>',
+            iconSize: [32, 48],
+            iconAnchor: [16, 48],
+            popupAnchor: [0, -48]
+        });
+
+        // Coordenadas de tus sucursales
+        const locations = [
+            {
+                coords: [21.1207, -101.6862],
+                title: "Villa",
+                info: `
+            <strong>📍 Villa</strong><br>
+            Blvd. Francisco Villa 4413, col. León I, León, Gto, México.<br>
+            📞 (477) 527 3183 / (477) 784 0785<br><br>
+            <a href="https://www.google.com/maps?q=21.1207,-101.6862" target="_blank" style="color:#2EA49C; font-weight:bold; text-decoration: underline;">Ver en Google Maps</a><br><br>
+            <button onclick="copyToClipboard('Villa: Blvd. Francisco Villa 4413, León, Gto.')" style="background:#2EA49C;color:#fff;border:none;border-radius:4px;padding:4px 8px;cursor:pointer;">Copiar dirección</button>
+        `
+            },
+            {
+                coords: [21.1179, -101.6881],
+                title: "Tepeyac",
+                info: `
+            <strong>📍 Tepeyac</strong><br>
+            Calzada Tepeyac 418, col. Andrade, León, Gto, México.<br>
+            📞 (477) 135 8317 / (477) 771 4461<br><br>
+            <a href="https://www.google.com/maps?q=21.1179,-101.6881" target="_blank" style="color:#2EA49C; font-weight:bold; text-decoration: underline;">Ver en Google Maps</a><br><br>
+            <button onclick="copyToClipboard('Tepeyac: Calzada Tepeyac 418, León, Gto.')" style="background:#2EA49C;color:#fff;border:none;border-radius:4px;padding:4px 8px;cursor:pointer;">Copiar dirección</button>
+        `
+            },
+            {
+                coords: [20.6811, -101.3542],
+                title: "Irapuato",
+                info: `
+            <strong>📍 Irapuato</strong><br>
+            Blvd. Lázaro Cárdenas 810, col. Las Palomas, Irapuato, Gto, México.<br>
+            📞 (462) 109 1647 / (462) 431 3113<br><br>
+            <a href="https://www.google.com/maps?q=20.6811,-101.3542" target="_blank" style="color:#2EA49C; font-weight:bold; text-decoration: underline;">Ver en Google Maps</a><br><br>
+            <button onclick="copyToClipboard('Irapuato: Blvd. Lázaro Cárdenas 810, Irapuato, Gto.')" style="background:#2EA49C;color:#fff;border:none;border-radius:4px;padding:4px 8px;cursor:pointer;">Copiar dirección</button>
+        `
+            }
+        ];
+
+
+
+        // Inicializa el mapa sin centrar ni zoom fijo, sin controles de zoom por defecto
+        var map = L.map('leaflet-map', { zoomControl: false });
+
+        // Capa base clara y moderna
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+
+
+
+        // Control de zoom en la esquina inferior derecha
+        L.control.zoom({ position: 'bottomright' }).addTo(map);
+
+        // Agrega marcadores, tooltips y popups, y guarda los bounds
+        var bounds = [];
+        locations.forEach((loc, i) => {
+            const marker = L.marker(loc.coords, { icon: customIcon }).addTo(map)
+                .bindPopup(loc.info)
+                .bindTooltip(loc.title, { permanent: true, direction: 'top', className: 'leaflet-tooltip-own' });
+            bounds.push(loc.coords);
+            if (i === 0) marker.openPopup(); // Abre el popup de la primera sucursal
+        });
+
+        L.easyButton('fa-map-marker-alt', function (btn, map) {
+            map.fitBounds(bounds, { padding: [20, 20] });
+        }, 'Ver todas las sucursales').addTo(map);
+
+
+        const baseMaps = {
+            "Claro": L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'),
+            "Oscuro": L.tileLayer('https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png'),
+            "Satélite": L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}')
+        };
+
+        const markers = L.markerClusterGroup();
+        locations.forEach(loc => {
+            const marker = L.marker(loc.coords, { icon: customIcon }).bindPopup(loc.info);
+            markers.addLayer(marker);
+        });
+        map.addLayer(markers);
+
+
+        baseMaps["Claro"].addTo(map);
+        L.control.layers(baseMaps).addTo(map);
+
+
+
+
+        // Ajusta el mapa para mostrar todos los marcadores
+        map.fitBounds(bounds, { padding: [20, 20] });
+
+        // Botón para centrar el mapa en todas las sucursales (opcional)
+        // Requiere Leaflet.EasyButton
+        // <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.css">
+        // <script src="https://cdn.jsdelivr.net/npm/leaflet-easybutton@2/src/easy-button.js"></sc
+    </script>
+
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert("Copiado al portapapeles: " + text);
+            }).catch(err => {
+                alert("No se pudo copiar: " + err);
+            });
+        }
+    </script>
+
+    
+    
+
+
+</body>
+
+</html>
