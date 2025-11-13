@@ -44,38 +44,6 @@
     });
 
 
-    // International carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        items: 1,
-        smartSpeed: 1500,
-        dots: true,
-        dotsData: true,
-        loop: true,
-        margin: 25,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ]
-    });
-
-
-
-    // testimonial carousel
-    $(".testimonial-carousel").owlCarousel({
-        autoplay: true,
-        smartSpeed: 1000,
-        center: true,
-        dots: true,
-        loop: true,
-        nav : true,
-        navText : [
-            '<i class="bi bi-arrow-left"></i>',
-            '<i class="bi bi-arrow-right"></i>'
-        ],
-    });
-
     
     
    // Back to top button
@@ -108,9 +76,9 @@
           }
         }
       }
+      
 
 
-    
 
 
 })(jQuery);

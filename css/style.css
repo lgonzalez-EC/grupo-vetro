@@ -651,3 +651,74 @@
 .hover-link:hover {
   color: #fff !important;
 }
+
+/* Projects Start */
+.projects-carousel {
+  position: relative;
+  overflow: hidden;
+  min-height: 350px;
+}
+
+.project {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.project.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.project-image {
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.btn-carousel:hover {
+  background: #0056b3;
+}
+/* Projects End */
+
+/* Carrousel marcas Start */
+.carousel {
+  overflow: hidden;
+  width: 100%;
+  /* ocupa todo el ancho */
+  background: #6b6b6b15;
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+  /* se ajusta al contenido */
+  margin: 0 auto;
+  /* centra el track */
+}
+
+.carousel-track img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+}
+
+.carousel-track img:hover {
+  filter: grayscale(0%);
+}
+/* Carrousel marcas End */

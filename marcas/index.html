@@ -296,59 +296,20 @@
     <footer class="footer text-white pt-5">
 
         <!-- Carrusel de marcas -->
-        <div class="border-bottom border-white py-5">
-            <div class="container">
-                <h3 class="text-center text-light mb-4">Marcas con las que trabajamos</h3>
-
-                <!-- Swiper Carousel -->
-                <div class="swiper brand-swiper">
-                    <div class="swiper-wrapper">
-                        <!-- Marcas únicas -->
-                        <div class="swiper-slide">
-                            <div class="brand-box"><img src="../img/marcas/3m.webp" alt="3M"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box"><img src="../img/marcas/assa_abloy.webp" alt="Assa Abloy"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box"><img src="../img/marcas/bruke.webp" alt="Vitec"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box"><img src="../img/marcas/dormakaba.webp" alt="Klingspor"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box"><img src="../img/marcas/herralum.webp" alt="Pennsylvania"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box"><img src="../img/marcas/jackson.webp" alt="Dormakaba"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box"><img src="../img/marcas/klingspor.webp" alt="Bruke"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box"><img src="../img/marcas/pennsylvania.webp" alt="Tesa"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box"><img src="../img/marcas/tesa.webp" alt="Herralum"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box"><img src="../img/marcas/vitec.webp" alt="Vitec"></div>
-                        </div>
-                        <!-- Duplicados para loop visual -->
-                        <div class="swiper-slide">
-                            <div class="brand-box"><img src="../img/marcas/3m.webp" alt="3M"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box"><img src="../img/marcas/assa_abloy.webp" alt="Assa Abloy"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box"><img src="../img/marcas/bruke.webp" alt="Vitec"></div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="brand-box"><img src="../img/marcas/dormakaba.webp" alt="Klingspor"></div>
-                        </div>
-                    </div>
-                </div>
+        <div class="carousel">
+            <div class="carousel-track" id="track">
+                <!-- Logos de ejemplo -->
+                <img src="../img/marcas/3m_sm.webp" alt="Brand 1">
+                <img src="../img/marcas/assa_abloy_sm.webp" alt="Brand 2">
+                <img src="../img/marcas/bruke_sm.webp" alt="Brand 3">
+                <img src="../img/marcas/dormakaba_sm.webp" alt="Brand 4">
+                <img src="../img/marcas/herralum_sm.webp" alt="Brand 5">
+                <img src="../img/marcas/jackson_sm.webp" alt="Brand 6">
+                <img src="../img/marcas/klingspor_sm.webp" alt="Brand 7">
+                <img src="../img/marcas/pennsylvania_sm.webp" alt="Brand 8">
+                <img src="../img/marcas/sparkling_sm.webp" alt="Brand 9">
+                <img src="../img/marcas/tesa_sm.webp" alt="Brand 10">
+                <img src="../img/marcas/vitec_sm.webp" alt="Brand 10">
             </div>
         </div>
 
@@ -433,21 +394,27 @@
     <!-- Template Javascript -->
     <script src="../js/main.js"></script>
 
-    <!-- Swiper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script>
-        const swiper = new Swiper('.brand-swiper', {
-            slidesPerView: 4,
-            spaceBetween: 20,
-            loop: true,
-            autoplay: {
-                delay: 0,
-                disableOnInteraction: false,
-            },
-            speed: 3000, // más lento (milisegundos)
-            allowTouchMove: true,
-            grabCursor: true,
+        const track = document.getElementById("track");
+
+        // Clonamos los logos para loop infinito
+        const logos = [...track.children];
+        logos.forEach(logo => {
+            const clone = logo.cloneNode(true);
+            track.appendChild(clone);
+        });
+
+        // Calculamos ancho total
+        const trackWidth = track.scrollWidth;
+
+        // Animación infinita
+        gsap.to(track, {
+            x: -trackWidth / 2,
+            duration: 50,
+            ease: "linear",
+            repeat: -1
         });
     </script>
 
