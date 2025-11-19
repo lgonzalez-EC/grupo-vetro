@@ -22,7 +22,7 @@
 
     // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 750) {
+        if ($(this).scrollTop() > 45) {
             $('.navbar').addClass('navbar-shrink shadow-sm');
         } else {
             $('.navbar').removeClass('navbar-shrink shadow-sm');

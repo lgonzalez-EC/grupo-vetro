@@ -23,7 +23,7 @@
         rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
     <!-- Libraries Stylesheet -->
@@ -32,10 +32,6 @@
 
     <!-- AOS CSS -->
     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-
-    <!-- Swiper.js -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-
 
     <!-- Leaflet CSS y JS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -67,7 +63,7 @@
 
 
     <!-- Navbar Start-->
-    <nav class="navbar navbar-expand-md bg-white shadow-lg sticky-top">
+    <nav class="navbar navbar-expand-md bg-white navbar-shrink shadow-lg sticky-top">
         <div class="container-fluid px-4">
             <!-- Logo -->
             <a class="navbar-brand d-flex align-items-center" href="#">
@@ -82,7 +78,7 @@
             <!-- Navigation links -->
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-                    <li class="nav-item"><a class="nav-link text-dark active" href="/">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark active" href="./">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="nosotros/">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="marcas/">Marcas</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="#productos">Productos</a></li>
@@ -169,7 +165,7 @@
 
 
     <!-- About Start -->
-    <section class="container-fluid overflow-hidden py-5" style="margin-top: 3rem;"> <!-- Reducido el margin-top -->
+    <section class="container-fluid overflow-hidden py-5" style="margin-top: 2rem;"> <!-- Reducido el margin-top -->
         <div class="container py-5">
             <div class="row g-5">
                 <!-- Imagen a la izquierda en pantallas grandes, centrada en pantallas pequeñas -->
@@ -198,47 +194,111 @@
     <!-- About End -->
 
 
-    <!-- Servicios Start -->
-    <section class="container-fluid service py-5">
+    <!-- Productos / Soluciones Start -->
+    <section class="container-fluid service py-5" style="margin-top: 3rem;">
         <div class="container">
             <!-- Título principal -->
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 400px;">
-                <h2 class="mb-1 text-primary">Nuestros Servicios</h2>
+                <h2 class="mb-1 text-primary">Productos / Soluciones</h2>
             </div>
 
-            <!-- Servicios principales -->
+            <!-- Productos principales -->
             <div class="row g-4 justify-content-center">
-                <!-- Service 1 -->
+                <!-- Producto 1: Alumineros -->
                 <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="service-card-modern d-flex flex-column align-items-center text-center h-100">
-                        <div class="service-card-icon mb-1">
-                            <i class="fas fa-chalkboard-teacher"></i>
+                        <div class="service-card-image mb-1">
+                            <img src="img/service/example.webp" alt="Vidrieros">
                         </div>
-                        <h3 class="service-card-title mb-3">Especialización y Capacitación Continua</h3>
-                        <p class="service-card-text flex-grow-1">
+                        <h3 class="service-card-title mb-2">Alumineros</h3>
+                        <p class="service-card-text">
                             Ofrecemos programas de formación para asegurar que tu equipo esté siempre a la vanguardia de
                             las mejores prácticas.
                         </p>
+                        <a href="#cotiza" class="btn btn-red mt-3">Cotizar</a>
                     </div>
                 </div>
-                <!-- Service 2 -->
+                <!-- Producto 2: Vidrieros -->
                 <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="service-card-modern d-flex flex-column align-items-center text-center h-100">
-                        <div class="service-card-icon mb-2">
-                            <i class="fas fa-headset"></i>
+                        <div class="service-card-image mb-1">
+                            <img src="img/service/example.webp" alt="Vidrieros">
                         </div>
-                        <h3 class="service-card-title mb-3">Atención al Cliente</h3>
-                        <p class="service-card-text flex-grow-1">
-                            Nuestro equipo está disponible para brindar apoyo rápido y efectivo para cualquier consulta
-                            o
-                            necesidad.
+                        <h3 class="service-card-title mb-2">Vidrieros</h3>
+                        <p class="service-card-text">
+                            Ofrecemos programas de formación para asegurar que tu equipo esté siempre a la vanguardia de
+                            las mejores prácticas.
                         </p>
+                        <a href="#cotiza" class="btn btn-red mt-3">Cotizar</a>
+                    </div>
+                </div>
+                <!-- Producto 3: Arquitectos -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="service-card-modern d-flex flex-column align-items-center text-center h-100">
+                        <div class="service-card-image mb-1">
+                            <img src="img/service/example.webp" alt="Vidrieros">
+                        </div>
+                        <h3 class="service-card-title mb-2">Arquitectos</h3>
+                        <p class="service-card-text">
+                            Ofrecemos programas de formación para asegurar que tu equipo esté siempre a la vanguardia de
+                            las mejores prácticas.
+                        </p>
+                        <a href="#cotiza" class="btn btn-red mt-3">Cotizar</a>
+                    </div>
+                </div>
+                <!-- Producto 4: Obra Civil -->
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="service-card-modern d-flex flex-column align-items-center text-center h-100">
+                        <div class="service-card-image mb-1">
+                            <img class="image" src="img/service/example.webp" alt="Vidrieros">
+                        </div>
+                        <h3 class="service-card-title mb-2">Obra Civil</h3>
+                        <p class="service-card-text">
+                            Ofrecemos programas de formación para asegurar que tu equipo esté siempre a la vanguardia de
+                            las mejores prácticas.
+                        </p>
+                        <a href="#cotiza" class="btn btn-red mt-3">Cotizar</a>
                     </div>
                 </div>
             </div>
 
+            <style>
+                .service-card-image img {
+                    overflow: hidden;
+                    cursor: pointer;
+
+                    position: relative;
+                    z-index: 5;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    width: 100%;
+                    height: 8rem;
+                    background-color: var(--primary-800);
+
+                    border-radius: 0.5rem;
+
+
+                }
+
+                .image_container .image {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    width: 3rem;
+                    fill: var(--light);
+                }
+            </style>
+
+
+
+
             <!-- Servicios secundarios -->
-            <div class="text-center mx-auto py-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
+            <div class="text-center mx-auto py-5 wow fadeInUp" data-wow-delay="0.1s"
+                style="max-width: 900px; margin-top: 3rem;">
                 <h2 class="text-primary">Servicios Secundarios</h2>
             </div>
             <div class="row g-4 justify-content-center">
@@ -248,7 +308,7 @@
                         <div class="service-card-icon mb-2">
                             <i class="fa-solid fa-paint-brush"></i>
                         </div>
-                        <h3 class="service-card-title mb-3">Diseño Publicitario</h3>
+                        <h3 class="service-card-title mb-3">Asesoría técnica personalizada</h3>
                         <p class="service-card-text flex-grow-1">
                             Creamos diseños visuales atractivos que ayudan a comunicar la esencia de tu marca de manera
                             efectiva.
@@ -259,10 +319,12 @@
                 <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="service-card-modern d-flex flex-column align-items-center text-center h-100">
                         <div class="service-card-icon mb-2">
-                            <img src="img/icon/corte_laser.png" alt="Corte Láser"
-                                style="width: 1.4em; display: inline-block;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 16 16">
+                                <path fill="currentColor"
+                                    d="M10.386 9.836a2.5 2.5 0 1 1 3.611.667C15.212 11.173 16 12.46 16 14v1.5a.5.5 0 1 1-1 0V14c0-1.724-1.276-3-3-3c-.91 0-1.298-.02-1.805-.122c-1.25-.254-2.333-1-3.585-2.566a.5.5 0 1 1 .78-.624c.9 1.124 1.653 1.74 2.434 2.043c.155.052.345.083.562.105m1.785.128q.125.015.251.034L12.5 10a1.5 1.5 0 1 0-.33-.036M9.78 11.97a.5.5 0 0 1 .5.5a1 1 0 0 1-.05.231c-.179.38-.23.774-.23 1.302v1.5a.5.5 0 1 1-1 0v-1.5c0-.657.072-1.186.307-1.696a.5.5 0 0 1 .473-.337M5.958 5.772a.5.5 0 0 1-.78.625L3.11 3.812a.5.5 0 1 1 .78-.624zM1 11h5.5a.5.5 0 1 1 0 1h-6a.5.5 0 0 1-.5-.5V.5A.5.5 0 0 1 .5 0h12a.5.5 0 0 1 .5.5v3a.5.5 0 1 1-1 0V1H1z" />
+                            </svg>
                         </div>
-                        <h3 class="service-card-title mb-3">Corte Láser</h3>
+                        <h3 class="service-card-title mb-3">Capacitación continua</h3>
                         <p class="service-card-text flex-grow-1">
                             Utilizamos tecnología de punta para el corte de materiales con alta precisión y calidad.
                         </p>
@@ -272,21 +334,75 @@
                 <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="service-card-modern d-flex flex-column align-items-center text-center h-100">
                         <div class="service-card-icon mb-2">
-                            <i class="fa-solid fa-layer-group"></i>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 48 48">
+                                <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="4">
+                                    <path stroke-linejoin="round" d="M12 4v32h32" />
+                                    <path stroke-linejoin="round" d="M20 12h16v16" />
+                                    <path d="M12 12H4m32 32v-8" />
+                                </g>
+                            </svg>
                         </div>
-                        <h3 class="service-card-title mb-3">Distribución de Panel de Aluminio</h3>
+                        <h3 class="service-card-title mb-3">Corte y maquila especializada</h3>
                         <p class="service-card-text flex-grow-1">
                             Proporcionamos paneles de alta calidad para proyectos de construcción y diseño
                             arquitectónico.
                         </p>
                     </div>
                 </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="service-card-modern d-flex flex-column align-items-center text-center h-100">
+                        <div class="service-card-icon mb-2">
+                            <i class="fa-solid fa-paint-brush"></i>
+                        </div>
+                        <h3 class="service-card-title mb-3">Logística digital</h3>
+                        <p class="service-card-text flex-grow-1">
+                            Creamos diseños visuales atractivos que ayudan a comunicar la esencia de tu marca de manera
+                            efectiva.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="service-card-modern d-flex flex-column align-items-center text-center h-100">
+                        <div class="service-card-icon mb-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 512 512"><path fill="currentColor" fill-rule="evenodd" d="M422.401 217.174c-6.613-67.84-46.72-174.507-170.666-174.507c-123.947 0-164.054 106.667-170.667 174.507c-23.2 8.805-38.503 31.079-38.4 55.893v29.867c0 32.99 26.744 59.733 59.733 59.733c32.99 0 59.734-26.744 59.734-59.733v-29.867c-.108-24.279-14.848-46.095-37.334-55.253c4.267-39.254 25.174-132.48 126.934-132.48s122.453 93.226 126.72 132.48c-22.44 9.178-37.106 31.009-37.12 55.253v29.867a59.95 59.95 0 0 0 33.92 53.76c-8.96 16.853-31.787 39.68-87.894 46.506c-11.215-17.03-32.914-23.744-51.788-16.023c-18.873 7.72-29.646 27.717-25.71 47.725s21.48 34.432 41.872 34.432a42.67 42.67 0 0 0 37.973-23.68c91.52-10.454 120.747-57.6 129.92-85.334c24.817-8.039 41.508-31.301 41.173-57.386v-29.867c.103-24.814-15.2-47.088-38.4-55.893m-302.933 85.76c0 9.425-7.641 17.066-17.067 17.066s-17.066-7.64-17.066-17.066v-29.867a17.067 17.067 0 1 1 34.133 0zm264.533-29.867c0-9.426 7.641-17.067 17.067-17.067s17.067 7.641 17.067 17.067v29.867c0 9.425-7.641 17.066-17.067 17.066s-17.067-7.64-17.067-17.066z"/></svg>
+                        </div>
+                        <h3 class="service-card-title mb-3">Soporte digital completo</h3>
+                        <p class="service-card-text flex-grow-1">
+                            Creamos diseños visuales atractivos que ayudan a comunicar la esencia de tu marca de manera
+                            efectiva.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="service-card-modern d-flex flex-column align-items-center text-center h-100">
+                        <div class="service-card-icon mb-2">
+                            <i class="fa-solid fa-paint-brush"></i>
+                        </div>
+                        <h3 class="service-card-title mb-3">Atención postventa</h3>
+                        <p class="service-card-text flex-grow-1">
+                            Creamos diseños visuales atractivos que ayudan a comunicar la esencia de tu marca de manera
+                            efectiva.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 col-xl-3">
+                    <div class="service-card-modern d-flex flex-column align-items-center text-center h-100">
+                        <div class="service-card-icon mb-2">
+                            <i class="fa-solid fa-paint-brush"></i>
+                        </div>
+                        <h3 class="service-card-title mb-3">Extras diferenciadores</h3>
+                        <p class="service-card-text flex-grow-1">
+                            Creamos diseños visuales atractivos que ayudan a comunicar la esencia de tu marca de manera
+                            efectiva.
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="text-center mt-5">
+            <!-- <div class="text-center mt-5">
                 <a href="/servicios/" class="btn btn-dark btn-lg">
                     Ver Más
                 </a>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- Servicios End -->
@@ -339,7 +455,7 @@
 
 
     <!-- Projects Start -->
-    <section class="container-fluid projects py-5">
+    <section class="container-fluid projects py-5" style="margin-top: 3rem;">
         <div class="container">
             <!-- Encabezado -->
             <div class="text-center mb-5">
@@ -424,7 +540,7 @@
 
 
     <!-- Testimonial Start -->
-    <section class="container-fluid testimonial py-5">
+    <section class="container-fluid testimonial py-5" style="margin-top: 3rem;">
         <div class="container py-5">
             <div class="text-center mx-auto mb-5" style="max-width: 900px;" data-aos="fade-up" data-aos-delay="200"
                 data-aos-duration="1000" data-aos-once="true">
@@ -488,7 +604,7 @@
 
 
     <!-- Aliados Start -->
-    <section class="container-fluid service py-5">
+    <section class="container-fluid service py-5" style="margin-top: 3rem;">
         <div class="container py-5">
             <div class="text-center mx-auto mb-5" style="max-width: 900px;" data-aos="fade-up" data-aos-delay="200"
                 data-aos-duration="1000" data-aos-once="true">
@@ -522,7 +638,7 @@
 
 
     <!-- Novedades Start -->
-    <section class="container-fluid py-5 bg-light">
+    <section class="container-fluid py-5 bg-light" style="margin-top: 3rem;">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="text-primary mb-4">Novedades</h2>
@@ -704,7 +820,7 @@
 
 
     <!-- Contact Start -->
-    <section class="container-fluid contact py-5">
+    <section class="container-fluid contact py-5" style="margin-top: 3rem;">
         <div class="container py-5">
             <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 900px;">
                 <h2 class="text-primary mb-4">Contáctanos</h2>
@@ -914,7 +1030,7 @@
 
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
+    <a href="#" class="btn btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>
 
 
     <!-- JavaScript Libraries -->
