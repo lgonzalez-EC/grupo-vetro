@@ -51,6 +51,7 @@ a {
   justify-content: center;
   transition: 0.5s;
   z-index: 99;
+  animation: float 3s ease-in-out infinite;
 }
 
 /*** Button Start ***/
@@ -564,6 +565,15 @@ a {
   }
   100% {
     right: 0px;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
 /*** Contact End ***/
