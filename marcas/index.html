@@ -56,15 +56,15 @@
 
 
     <!-- Navbar Start-->
-    <nav class="navbar navbar-expand-md bg-white shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-md bg-white navbar-shrink shadow-lg sticky-top">
         <div class="container-fluid px-4">
             <!-- Logo -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="../">
                 <img src="../img/vetro-color.webp" alt="Logo_Grupo_Vetro">
             </a>
 
             <!-- Mobile toggle button -->
-            <button class="navbar-toggler border-0" type="button" id="menuToggle">
+            <button class="navbar-toggler border-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" id="menuToggle">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -73,7 +73,7 @@
                 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                     <li class="nav-item"><a class="nav-link text-dark" href="../">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="../nosotros/">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark active" href="/marcas/">Catalogos</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark active" href="../marcas/">Catalogos</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="../contacto/">Contacto</a></li>
                     <li class="nav-item">
                         <a class="btn ms-md-3" href="#cotiza">Cotiza ahora</a>
@@ -87,7 +87,7 @@
 
     <!-- Header Start -->
     <header class="page-header d-flex flex-column align-items-center justify-content-center">
-        <h1 class="display-3 text-uppercase mb-3">Marcas y Catálogos</h1>
+        <h1 class="display-3 text-uppercase mb-3 text-center">Marcas y Catálogos</h1>
         <div class="d-inline-flex text-white">
             <h6 class="text-uppercase m-0"><a class="" href="../">Inicio</a></h6>
             <h6 class="m-0 px-3">/</h6>
@@ -427,11 +427,15 @@
 
             <!-- Windowfilms 3M -->
             <div class="col-6 col-md-4 col-lg-2">
-                <div class="card h-100 text-center p-3 shadow-sm" data-multiple="true" data-catalogs='[{"name": "3M Catálogo", "url": "/catalogos/3M_catalogo.pdf"}, {"name": "3M Herrajes", "url": "/catalogos/3M_catalogo.pdf"}]'>
+                <div class="card h-100 text-center p-3 shadow-sm" data-multiple="true" 
+                    data-catalogs='[
+                        {"name": "3M Catálogo", "url": "/marcas/catalogos/3M_catalogo.pdf"}, 
+                        {"name": "3M Herrajes", "url": "/marcas/catalogos/3M_catalogo.pdf"}
+                    ]'>
                     <img src="/img/marcas/3m.webp" alt="3M" class="img-fluid mb-3" style="max-height: 80px;">
                     <p class="mb-1 small">Películas de control solar, seguridad y eficiencia energética.</p>
                     <div class="d-grid gap-2 mt-3">
-                        <a href="/catalogos/3M_catalogo.pdf" class="btn btn-danger btn-sm" target="_blank">Ver catálogo</a>
+                        <a href="/marcas/catalogos/3M_catalogo.pdf" class="btn btn-danger btn-sm" target="_blank">Ver catálogo</a>
                         <a href="/catalogos/3M_catalogo.pdf" class="btn btn-secondary btn-sm" download>Descargar</a>
                     </div>
                 </div>
@@ -451,7 +455,7 @@
 
             <!-- Wurth -->
             <div class="col-6 col-md-4 col-lg-2">
-                <div class="card h-100 text-center p-3 shadow-sm">
+                <div class="card h-100 text-center p-3 shadow-sm" data-multiple="true" data-catalogs='[{"name": "Wurth Catálogo", "url": "/catalogos/3M_catalogo.pdf"}, {"name": "Wurth Herrajes", "url": "/catalogos/3M_catalogo.pdf"}]'>
                     <img src="/img/marcas/wurth_sm.webp" alt="Nike" class="img-fluid mb-3" style="max-height: 80px;">
                     <p class="mb-1 small">Adhesivos, abrasivos y herramientas para instalación profesional.</p>
                     <div class="d-grid gap-2 mt-3">
@@ -637,8 +641,14 @@
 
                     catalogs.forEach(catalog => {
                         const li = document.createElement('li');
-                        li.className = 'list-group-item';
-                        li.innerHTML = `<a href="${catalog.url}" target="_blank" class="text-decoration-none">${catalog.name}</a>`;
+                        li.className = 'list-group-item d-flex justify-content-between align-items-center';
+                        li.innerHTML = `
+                            <span>${catalog.name}</span>
+                            <div>
+                                <a href="${catalog.url}" target="_blank" class="btn btn-sm btn-primary me-2">Ver</a>
+                                <a href="${catalog.url}" download class="btn btn-sm btn-secondary">Descargar</a>
+                            </div>
+                        `;
                         catalogList.appendChild(li);
                     });
 

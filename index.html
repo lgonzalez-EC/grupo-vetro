@@ -66,13 +66,13 @@
     <nav class="navbar navbar-expand-md bg-white navbar-shrink shadow-lg sticky-top">
         <div class="container-fluid px-4">
             <!-- Logo -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="./">
                 <img src="img/vetro-color.webp" alt="Logo_Grupo_Vetro">
             </a>
 
             <!-- Mobile toggle button -->
-            <button class="navbar-toggler border-1" type="button" id="menuToggle">
-                <span class="navbar-toggler-icon text-dark"></span>
+            <button class="navbar-toggler border-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" id="menuToggle">
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- Navigation links -->
@@ -206,7 +206,7 @@
                 <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="service-card-modern d-flex flex-column align-items-center text-center h-100">
                         <div class="service-card-image mb-3">
-                            <img src="img/service/example.webp" alt="Vidrieros">
+                            <img src="img/service/herraje.webp" alt="Vidrieros">
                         </div>
                         <h3 class="service-card-title mb-2">Aluminio</h3>
                         <!-- <p class="service-card-text">
@@ -248,7 +248,7 @@
                 <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="service-card-modern d-flex flex-column align-items-center text-center h-100">
                         <div class="service-card-image mb-3">
-                            <img class="image" src="img/service/example.webp" alt="Vidrieros">
+                            <img class="image" src="img/service/herraje.webp" alt="Vidrieros">
                         </div>
                         <h3 class="service-card-title mb-2">Herrajes</h3>
                         <!-- <p class="service-card-text">
@@ -262,7 +262,7 @@
                 <div class="col-md-6 col-lg-4 col-xl-3">
                     <div class="service-card-modern d-flex flex-column align-items-center text-center h-100">
                         <div class="service-card-image mb-3">
-                            <img class="image" src="img/service/example.webp" alt="Vidrieros">
+                            <img class="image" src="img/service/selladores.webp" alt="Vidrieros">
                         </div>
                         <h3 class="service-card-title mb-2">Selladores </h3>
                         <!-- <p class="service-card-text">
@@ -286,7 +286,7 @@
                     justify-content: center;
 
                     width: 100%;
-                    height: 8rem;
+                    height: 10rem;
                     background-color: var(--primary-800);
 
                     border-radius: 0.5rem;
@@ -663,28 +663,51 @@
             <div class="row">
                 <!-- Columna izquierda: lista de eventos -->
                 <div class="col-md-4">
-                    <div class="event-card card mb-3 active"
-                        data-image="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80">
-                        <div class="card-body">
-                            <h5 class="card-title">Evento Actual</h5>
-                            <p class="card-text">Texto ejemplo (Conferencia sobre innovación tecnológica.)</p>
-                            <button class="btn btn-sm">Detalles</button>
+                    <div class="event-list">
+                        <div class="event-card card mb-3 active"
+                            data-image="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
+                            data-text="Texto ejemplo (Conferencia sobre innovación tecnológica.)">
+                            <div class="card-body">
+                                <h5 class="card-title">Evento Actual</h5>
+                                <p class="card-text">Texto ejemplo (Conferencia sobre innovación tecnológica.)</p>
+                                <button class="btn btn-sm">Detalles</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="event-card card mb-3"
-                        data-image="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=80">
-                        <div class="card-body">
-                            <h5 class="card-title">Evento Pasado</h5>
-                            <p class="card-text">Texto ejemplo (Feria de construcción sostenible.)</p>
-                            <button class="btn btn-sm">Ver resumen</button>
+                        <div class="event-card card mb-3"
+                            data-image="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=80"
+                            data-text="Texto ejemplo (Feria de construcción sostenible.)">
+                            <div class="card-body">
+                                <h5 class="card-title">Evento Pasado</h5>
+                                <p class="card-text">Texto ejemplo (Feria de construcción sostenible.)</p>
+                                <button class="btn btn-sm">Ver resumen</button>
+                            </div>
                         </div>
-                    </div>
-                    <div class="event-card card mb-3"
-                        data-image="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80">
-                        <div class="card-body">
-                            <h5 class="card-title">Evento Futuro</h5>
-                            <p class="card-text">Texto ejemplo (Expo internacional de arquitectura.)</p>
-                            <button class="btn btn-sm">Registrarse</button>
+                        <div class="event-card card mb-3"
+                            data-image="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1000&q=80"
+                            data-text="Texto ejemplo (Expo internacional de arquitectura.)">
+                            <div class="card-body">
+                                <h5 class="card-title">Evento Futuro</h5>
+                                <p class="card-text">Texto ejemplo (Expo internacional de arquitectura.)</p>
+                                <button class="btn btn-sm">Registrarse</button>
+                            </div>
+                        </div>
+                        <div class="event-card card mb-3"
+                            data-image="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1000&q=80"
+                            data-text="Texto ejemplo (Feria de construcción sostenible.)">
+                            <div class="card-body">
+                                <h5 class="card-title">Evento Pasado</h5>
+                                <p class="card-text">Texto ejemplo (Feria de construcción sostenible.)</p>
+                                <button class="btn btn-sm">Ver resumen</button>
+                            </div>
+                        </div>
+                        <div class="event-card card mb-3 active"
+                            data-image="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=80"
+                            data-text="Texto ejemplo (Conferencia sobre innovación.)">
+                            <div class="card-body">
+                                <h5 class="card-title">Evento Actual</h5>
+                                <p class="card-text">Texto ejemplo (Conferencia sobre innovación tecnológica.)</p>
+                                <button class="btn btn-sm">Detalles</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -764,11 +787,8 @@
     <!- Beneficios adicionales Fin -->
 
 
-
-
-
     <!-- FAQ Start -->
-    <!-- <div class="container-fluid FAQ bg-light overflow-hidden py-5">
+    <div class="container-fluid FAQ bg-light overflow-hidden py-5">
             <div class="container py-5">
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeInLeft" data-wow-delay="0.1s">
@@ -824,11 +844,8 @@
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
     <!-- FAQ End -->
-
-
-
 
 
     <!-- Contact Start -->

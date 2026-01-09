@@ -56,15 +56,15 @@
 
 
     <!-- Navbar Start-->
-    <nav class="navbar navbar-expand-md bg-white shadow-sm sticky-top">
+    <nav class="navbar navbar-expand-md bg-white navbar-shrink shadow-lg sticky-top">
         <div class="container-fluid px-4">
             <!-- Logo -->
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="../">
                 <img src="../img/vetro-color.webp" alt="Logo_Grupo_Vetro">
             </a>
 
             <!-- Mobile toggle button -->
-            <button class="navbar-toggler border-0" type="button" id="menuToggle">
+            <button class="navbar-toggler border-1" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" id="menuToggle">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -72,7 +72,7 @@
             <div class="collapse navbar-collapse" id="navbarMenu">
                 <ul class="navbar-nav ms-auto mb-2 mb-md-0">
                     <li class="nav-item"><a class="nav-link text-dark" href="../">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link text-dark active" href="/nosotros/">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link text-dark active" href="../nosotros/">Nosotros</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="../marcas/">Catalogos</a></li>
                     <li class="nav-item"><a class="nav-link text-dark" href="../contacto/">Contacto</a></li>
                     <li class="nav-item">
@@ -82,22 +82,6 @@
             </div>
         </div>
     </nav>
-
-    <script>
-        const toggleButton = document.getElementById("menuToggle");
-        const navbarMenu = document.getElementById("navbarMenu");
-
-        toggleButton.addEventListener("click", () => {
-            navbarMenu.classList.toggle("show");
-        });
-
-        // Optional: close menu when clicking a link (mobile)
-        document.querySelectorAll("#navbarMenu .nav-link").forEach(link => {
-            link.addEventListener("click", () => {
-                navbarMenu.classList.remove("show");
-            });
-        });
-    </script>
     <!-- Navbar End -->
 
 
